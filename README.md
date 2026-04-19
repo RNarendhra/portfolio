@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# 🚀 Narendhra R - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👨‍💻 About Me
 
-## Available Scripts
+AI/ML Engineer specializing in Machine Learning, Deep Learning, and LLM-based applications. Passionate about building scalable ML systems and deploying production-ready solutions.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌐 Live Portfolio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+👉 https://rnarendhra.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React.js
+* Tailwind CSS
+* JavaScript
+* HTML & CSS
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Projects
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔹 MCQ Generator (LLM-based)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Built using Gemini API & LangChain
+* Generates MCQs from text, PDFs, and URLs
+* Supports difficulty levels and exports
 
-### `npm run eject`
+### 🔹 Sentiment Analysis
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* NLP-based classification model
+* Uses TF-IDF and ML algorithms
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔹 Customer Churn Prediction
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* ML models like Random Forest, Logistic Regression
+* Achieved ~85–90% accuracy
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔹 YOLO Vehicle Detection
 
-## Learn More
+* Real-time object detection system
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📞 Contact
 
-### Code Splitting
+* Email: [rnarendhra5@gmail.com](mailto:rnarendhra5@gmail.com)
+* LinkedIn: (add your link)
+* GitHub: https://github.com/RNarendhra
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## ⚡ Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deployed using Vercel
