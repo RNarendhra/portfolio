@@ -185,7 +185,7 @@ function App() {
                 Narendhra R
               </p>
               <h1 className="mt-5 max-w-3xl text-5xl font-semibold leading-[1.02] tracking-[-0.05em] text-white sm:text-6xl lg:text-7xl">
-                Hi, I&apos;m Narendhra <span aria-hidden="true">👋</span>
+                Hi, I&apos;m Narendhra <span aria-hidden="true">&#128075;</span>
               </h1>
               <p className="mt-7 max-w-3xl text-2xl font-medium leading-10 tracking-[-0.02em] text-slate-100 sm:text-3xl">
                 AI/ML Engineer specializing in Machine Learning, Deep Learning, and
@@ -201,7 +201,7 @@ function App() {
                 <a
                   href={`${process.env.PUBLIC_URL}/Narendhra_R_2025_CSE.pdf`}
                   download
-                  className="ui-button ui-button-secondary"
+                  className="ui-button ui-button-primary"
                 >
                   Download Resume
                 </a>
@@ -361,7 +361,7 @@ function App() {
                       href={project.codeUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="ui-button ui-button-secondary"
+                      className="ui-button ui-button-primary"
                     >
                       View Code
                     </a>
@@ -422,17 +422,11 @@ function App() {
                 description="I&apos;m open to AI, ML, and backend engineering opportunities, including full-time roles, internships, and project-based work."
               />
               <div className="mt-10 grid gap-4 md:grid-cols-3">
-                <a
-                  href="mailto:rnarendhra5@gmail.com"
-                  className="interactive-card rounded-2xl p-6 transition duration-300 ease-in-out"
-                >
+                <a href="mailto:rnarendhra5@gmail.com" className="interactive-card rounded-2xl p-6">
                   <p className="text-sm uppercase tracking-[0.25em] text-slate-400">Email</p>
                   <p className="mt-3 text-lg font-semibold text-white">rnarendhra5@gmail.com</p>
                 </a>
-                <a
-                  href="tel:+919494226544"
-                  className="interactive-card rounded-2xl p-6 transition duration-300 ease-in-out"
-                >
+                <a href="tel:+919494226544" className="interactive-card rounded-2xl p-6">
                   <p className="text-sm uppercase tracking-[0.25em] text-slate-400">Phone</p>
                   <p className="mt-3 text-lg font-semibold text-white">+91 9494226544</p>
                 </a>
@@ -440,7 +434,7 @@ function App() {
                   href={profileLinks.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="interactive-card rounded-2xl p-6 transition duration-300 ease-in-out"
+                  className="interactive-card rounded-2xl p-6"
                 >
                   <p className="text-sm uppercase tracking-[0.25em] text-slate-400">LinkedIn</p>
                   <p className="mt-3 text-lg font-semibold text-white">View Profile</p>
@@ -451,7 +445,7 @@ function App() {
                   I&apos;m available to discuss AI systems, backend engineering, and
                   product-focused machine learning work.
                 </p>
-                <a href="mailto:rnarendhra5@gmail.com" className="ui-button ui-button-primary">
+                <a href="mailto:rnarendhra5@gmail.com" className="ui-button ui-button-primary shrink-0">
                   Get In Touch
                 </a>
               </div>
