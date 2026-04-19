@@ -3,7 +3,5 @@ import App from './App';
 
 test('renders the hero heading', () => {
   render(<App />);
-  expect(
-    screen.getByRole('heading', { name: /AI\/ML Engineer building practical machine learning and LLM systems/i })
-  ).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: /Hi, I'm Narendhra/i })).toBeInTheDocument();
 });

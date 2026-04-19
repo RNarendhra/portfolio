@@ -23,11 +23,11 @@ const projects = [
     period: 'LLM-based application',
     stack: 'Python, Gemini API, LangChain, FastAPI, Pandas',
     description:
-      'Built an end-to-end question generation workflow that turns text, PDFs, and URLs into structured MCQs.',
+      'Developed an end-to-end LLM system using Gemini API, LangChain, and FastAPI to generate structured MCQs from text, PDFs, and URLs.',
     highlights: [
-      'Generated Easy, Medium, and Hard questions with answers and explanations.',
-      'Added topic tagging, variable question counts, and CSV / JSON exports.',
-      'Deployed the pipeline through FastAPI for real-time API access.',
+      'Generated Easy, Medium, and Hard questions with answer keys and clear explanations.',
+      'Added topic tagging, configurable question counts, and CSV or JSON export support.',
+      'Exposed the workflow through FastAPI for real-time educational and content-generation use cases.',
     ],
   },
   {
@@ -35,11 +35,11 @@ const projects = [
     period: 'Classification project',
     stack: 'Python, Pandas, NumPy, Scikit-learn, Matplotlib, SMOTE',
     description:
-      'Created a churn prediction system using multiple tree-based and linear models to improve retention insights.',
+      'Created a customer churn prediction pipeline using Scikit-learn models to identify at-risk users and support retention decisions.',
     highlights: [
-      'Handled missing values, encoding, scaling, and class imbalance correction.',
-      'Compared models with Precision, Recall, F1-score, and ROC-AUC.',
-      'Reached roughly 85 to 90 percent accuracy across evaluated classifiers.',
+      'Handled missing values, encoding, scaling, and class imbalance correction with SMOTE.',
+      'Compared Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting using Precision, Recall, F1-score, and ROC-AUC.',
+      'Delivered strong predictive performance at roughly 85 to 90 percent accuracy while surfacing feature-level business insights.',
     ],
   },
   {
@@ -47,11 +47,11 @@ const projects = [
     period: 'NLP pipeline',
     stack: 'Python, NLTK, TF-IDF, Scikit-learn',
     description:
-      'Designed a sentiment classifier for positive, negative, and neutral text using traditional NLP pipelines.',
+      'Built an NLP pipeline to classify text as positive, negative, or neutral using TF-IDF features and Scikit-learn models.',
     highlights: [
-      'Applied tokenization, stopword removal, and lemmatization.',
-      'Used TF-IDF vectorization with optimized machine learning classifiers.',
-      'Improved classification quality through feature engineering and evaluation.',
+      'Applied tokenization, stopword removal, and lemmatization to clean raw text data.',
+      'Used TF-IDF vectorization with machine learning classifiers to produce reliable sentiment predictions.',
+      'Improved model quality through feature engineering, evaluation, and iterative tuning.',
     ],
   },
   {
@@ -59,10 +59,10 @@ const projects = [
     period: 'Computer vision project',
     stack: 'YOLOv4, OpenCV, Object Detection',
     description:
-      'Built a real-time number plate detection workflow for traffic monitoring use cases.',
+      'Developed a real-time number plate detection system with YOLOv4 and OpenCV for traffic monitoring scenarios.',
     highlights: [
-      'Used YOLOv4 for fast and accurate detection.',
-      'Focused on real-time performance and robust visual recognition.',
+      'Delivered fast and accurate detection using YOLOv4 for live video input.',
+      'Designed the workflow for practical computer vision use cases where speed and detection quality matter.',
     ],
   },
 ];
@@ -74,17 +74,17 @@ const experience = [
     date: 'Sep 2024 - Nov 2024',
     location: 'Hyderabad, Telangana',
     points: [
-      'Developed classification and regression models with Scikit-learn, TensorFlow, and PyTorch.',
-      'Improved data pipelines through preprocessing, feature engineering, and model evaluation.',
-      'Designed end-to-end ML workflows with API-based model serving using FastAPI and Flask.',
-      'Applied MLOps practices including versioning, reproducibility, and deployment planning.',
+      'Developed classification and regression models with Scikit-learn, TensorFlow, and PyTorch for applied ML use cases.',
+      'Improved model quality through preprocessing, feature engineering, and structured evaluation workflows.',
+      'Designed ML pipelines with FastAPI and Flask to serve models through production-ready APIs.',
+      'Worked with versioning and reproducible workflows to support reliable deployment and collaboration.',
     ],
   },
 ];
 
 const quickFacts = [
-  'B.Tech in CSE (AI & ML), CMR Technical Campus',
-  'Graduated 2025 with 7.65 GPA',
+  'Computer Science graduate in AI & ML from CMR Technical Campus',
+  'Graduated in 2025 with a 7.65 GPA',
   'Based in Hyderabad, Telangana',
   'Languages: English, Telugu, Hindi',
 ];
@@ -124,25 +124,34 @@ function App() {
                 Narendhra R
               </p>
               <h1 className="mt-4 max-w-3xl text-5xl font-semibold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
-                AI/ML Engineer building practical machine learning and LLM systems.
+                Hi, I&apos;m Narendhra 👋
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                I specialize in machine learning, deep learning, and production-ready API
-                deployments with FastAPI. My work spans NLP, computer vision, and
-                scalable ML pipelines designed for real-world use.
+              <p className="mt-6 max-w-3xl text-2xl font-medium leading-9 text-slate-100 sm:text-3xl">
+                AI/ML Engineer specializing in Machine Learning, Deep Learning, and
+                LLM-based applications
               </p>
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+                I build scalable, real-world AI systems.
+              </p>
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <a
-                  href="mailto:rnarendhra5@gmail.com"
+                  href="#projects"
                   className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
                 >
-                  Contact Me
+                  View My Work
                 </a>
                 <a
-                  href="tel:+919494226544"
+                  href="mailto:rnarendhra5@gmail.com"
                   className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:bg-white/10"
                 >
-                  +91 94942 26544
+                  Get In Touch
+                </a>
+                <a
+                  href={`${process.env.PUBLIC_URL}/Narendhra_R_2025_CSE.pdf`}
+                  download
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:bg-white/10"
+                >
+                  Download Resume
                 </a>
               </div>
             </div>
@@ -176,8 +185,9 @@ function App() {
                     )}
                   </div>
                   <p className="mt-6 text-sm leading-7 text-slate-400">
-                    Hyderabad, Telangana · Available for software, AI, and ML-focused roles
-                    with strong delivery ownership.
+                    Hyderabad, Telangana | I am seeking AI/ML Engineer roles where I can
+                    build and deploy real-world intelligent systems with strong ownership
+                    and impact.
                   </p>
                 </div>
               </div>
@@ -188,15 +198,15 @@ function App() {
         <section id="about" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
           <SectionTitle
             eyebrow="About"
-            title="Applied ML with an engineering mindset."
-            description="My background is centered on building useful AI systems, not just training models in isolation. I enjoy turning messy data and model logic into clean, testable APIs and deployment-ready workflows."
+            title="Building practical AI systems."
+            description="I am a Computer Science graduate focused on building practical AI systems. I work on machine learning, NLP, and computer vision, and I enjoy turning ideas into scalable, production-ready applications using tools like FastAPI and modern web technologies."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_1.15fr]">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
               <p className="text-lg leading-8 text-slate-200">
-                From LLM-powered MCQ generation to churn prediction and computer vision,
-                I focus on projects where machine learning produces a measurable output and
-                a clear user workflow.
+                I work across LLM applications, predictive modeling, and computer
+                vision, with a strong focus on turning technical ideas into usable
+                products.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
@@ -208,13 +218,13 @@ function App() {
                 <p className="mt-2 text-sm text-slate-300">
                   B.Tech in Computer Science and Engineering (AI &amp; ML)
                 </p>
-                <p className="mt-3 text-sm text-slate-400">2021 - 2025 · GPA 7.65</p>
+                <p className="mt-3 text-sm text-slate-400">2021 - 2025 | GPA 7.65</p>
               </div>
               <div className="rounded-[1.75rem] border border-white/10 bg-slate-900/80 p-6">
                 <p className="text-sm uppercase tracking-[0.25em] text-slate-400">Interests</p>
                 <p className="mt-4 text-sm leading-7 text-slate-300">
-                  Cricket, chess, reading books, and movies. I value analytical thinking,
-                  steady iteration, and practical problem-solving.
+                  Cricket, chess, reading, and films. I value analytical thinking,
+                  consistency, and practical problem-solving.
                 </p>
               </div>
             </div>
@@ -224,8 +234,8 @@ function App() {
         <section id="skills" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
           <SectionTitle
             eyebrow="Skills"
-            title="Tools I use to ship ML work."
-            description="A mix of model development, backend deployment, and hands-on data tooling."
+            title="Tools I use to deliver AI products."
+            description="A focused stack across model development, backend deployment, and data workflows."
           />
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {skillGroups.map((group) => (
@@ -253,7 +263,7 @@ function App() {
           <SectionTitle
             eyebrow="Projects"
             title="Selected work across LLMs, NLP, and computer vision."
-            description="Portfolio pieces pulled directly from the resume and shaped into product-oriented case studies."
+            description="A selection of projects showcasing real-world applications of AI across LLMs, NLP, and computer vision."
           />
           <div className="mt-12 grid gap-6 xl:grid-cols-2">
             {projects.map((project) => (
@@ -289,8 +299,8 @@ function App() {
         <section id="experience" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
           <SectionTitle
             eyebrow="Experience"
-            title="Industry exposure in applied machine learning."
-            description="Hands-on internship work focused on model quality, deployment readiness, and reliable ML delivery."
+            title="Applied machine learning in a delivery-focused environment."
+            description="Industry experience building models, improving pipelines, and preparing ML systems for real use."
           />
           <div className="mt-12 space-y-6">
             {experience.map((item) => (
@@ -329,8 +339,8 @@ function App() {
           <div className="rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-cyan-500/20 via-slate-900 to-slate-900 p-8 sm:p-12">
             <SectionTitle
               eyebrow="Contact"
-              title="Let’s build something useful."
-              description="If you are hiring for AI, ML, or backend engineering work, I’m available to discuss internships, full-time roles, and project collaboration."
+              title="Let&apos;s connect."
+              description="I&apos;m open to AI, ML, and backend engineering opportunities, including full-time roles, internships, and project-based work."
             />
             <div className="mt-10 grid gap-4 md:grid-cols-3">
               <a
@@ -352,6 +362,10 @@ function App() {
                 <p className="mt-3 text-lg font-semibold text-white">Hyderabad, Telangana</p>
               </div>
             </div>
+            <p className="mt-8 text-base leading-7 text-slate-300">
+              I&apos;m actively seeking opportunities as an AI/ML Engineer. Let&apos;s
+              connect and build something impactful.
+            </p>
           </div>
         </section>
       </main>
