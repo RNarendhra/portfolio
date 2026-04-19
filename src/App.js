@@ -328,7 +328,7 @@ function App() {
           <div className="mt-12 grid gap-6 xl:grid-cols-2">
             {projects.map((project) => (
               <article key={project.title} className="project-card rounded-[2rem] p-[1px]">
-                <div className="project-card-inner flex h-full flex-col rounded-[calc(2rem-1px)] p-8">
+                <div className="project-card-inner flex h-full flex-col rounded-[calc(2rem-1px)] p-6 space-y-3">
                   <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                     <div>
                       <h3 className="text-2xl font-semibold tracking-[-0.03em] text-white">
@@ -340,14 +340,14 @@ function App() {
                     </div>
                   </div>
 
-                  <p className="mt-6 text-base leading-8 text-slate-300">
+                  <p className="text-base leading-8 text-slate-300">
                     {project.description}
                   </p>
-                  <p className="mt-5 text-sm font-medium leading-7 text-cyan-200">
+                  <p className="text-sm font-medium leading-7 text-cyan-200">
                     Tech: {project.stack}
                   </p>
 
-                  <ul className="mt-6 space-y-3 text-sm leading-7 text-slate-300">
+                  <ul className="space-y-3 text-sm leading-7 text-slate-300">
                     {project.highlights.map((highlight) => (
                       <li key={highlight} className="flex gap-3">
                         <span className="mt-2 h-2 w-2 flex-none rounded-full bg-cyan-300" />
@@ -356,7 +356,7 @@ function App() {
                     ))}
                   </ul>
 
-                  <div className="mt-8 flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-4 pt-2">
                     <a
                       href={project.codeUrl}
                       target="_blank"
